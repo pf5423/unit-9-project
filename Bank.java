@@ -19,6 +19,12 @@ public class Bank extends Account {
         name = n;
     }
 
+public void deposit(double i) {
+    super.setBalance(super.getBalance() + i);
+}
 
+public String toString() {
+    return "Hi " + name + ", " + super.toString();
+}
 
 }
