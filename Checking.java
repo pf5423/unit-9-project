@@ -18,6 +18,13 @@ public class Checking extends Bank {
         fee = f;
     } 
 
+public void withdraw(double i) {
+    super.withdraw(i);
+    if (super.getBalance() < 0) {
+        super.withdraw(fee);
+    }
+}
+
     public String toString() {
         return super.toString() + ". Your overdraft fee is " + fee;
     }
