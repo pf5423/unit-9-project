@@ -4,11 +4,11 @@ public class Account {
     private int numberAccount;
     private int accountBalance;
 
-    public Amount(){
+    public Account(){
         this.numberAccount = (int) Math.random() * 999 + 1;
         this.accountBalance = 0;
     }
-    public Amount(int accountBalance){
+    public Account(int accountBalance){
         this.accountBalance = accountBalance;
         this.numberAccount = (int) Math.random() * 999 + 1;
     }
