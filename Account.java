@@ -24,7 +24,7 @@ public class Account {
         return this.numberAccount;
     }
     public void setAccountNumber(){
-
+        this.numberAccount = (int) Math.random() * 999 + 1;
     }
 
     public String toString(){
