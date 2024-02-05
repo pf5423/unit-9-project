@@ -1,3 +1,4 @@
+
 public class Credit extends Bank{
     private double apr;
 
@@ -16,5 +17,20 @@ public class Credit extends Bank{
         this.apr = apr;
     }
 
-    public 
+    public void makePurchase(double purchase){
+        super.setBalance(super.getBalance()+purchase);
+    }
+    public double monthlyStatement(boolean statement){
+        if (statement == true){
+            return super.getBalance();
+        }
+        else {
+            return super.getBalance() * (this.apr/12);
+        }
+    }
+    public double monthsToPayOff(double months){
+        return ((Math.pow((1 + (this.apr/12)), months) * (this.apr/12))/(Math.pow(1 + (this.apr/12), months) - 1)) * super.getBalance();
+    }
+    p
+
 }
