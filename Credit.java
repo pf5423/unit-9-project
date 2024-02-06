@@ -20,13 +20,9 @@ public class Credit extends Account{
     public void makePurchase(double purchase){
         super.setBalance(super.getBalance()+purchase);
     }
-    public double monthlyStatement(boolean statement){
-        if (statement == true){
-            return super.getBalance();
-        }
-        else {
-            return super.getBalance() * (this.apr/12);
-        }
+    public void monthlyStatement(){
+        System.out.println("If paided on time, your balance is " + super.getBalance());
+        System.out.println("If not paided on time, your balance is: " + (super.getBalance() * (this.apr/12)));
     }
     public double monthsToPayOff(double months){
         return ((Math.pow((1 + (this.apr/12)), months) * (this.apr/12))/(Math.pow(1 + (this.apr/12), months) - 1)) * super.getBalance();
