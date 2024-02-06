@@ -21,7 +21,6 @@ public class Savings extends Bank{
         return (Math.log(idealMoney/super.getBalance())) / (12 * Math.log(1 + (this.interestRate / 12)));
     }
 
-    @Override
     public void withdraw(double withdraw){
         if ((super.getBalance() - withdraw) < 0){
             System.out.println("The amount cannot be withdrawn as your balance is less than the withdrawal");
