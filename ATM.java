@@ -78,11 +78,9 @@ public class ATM {
                 }
             }
             else if (in == 2) {
-<<<<<<< Updated upstream
                 continue;
             }
             else if (in == 3) {
-=======
                 while (true) {
                     System.out.println("");
                 System.out.println("Checking Account Menu");
@@ -134,7 +132,6 @@ public class ATM {
                 }
                 }
                 
->>>>>>> Stashed changes
                 continue;
             }
             else {
