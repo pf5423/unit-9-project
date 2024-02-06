@@ -1,13 +1,13 @@
 
-public class Credit extends Bank{
+public class Credit extends Account{
     private double apr;
 
     public Credit(){
         super();
         apr = 0;
     }
-    public Credit(String name, double balance, double apr){
-        super(name, balance);
+    public Credit(double balance, double apr){
+        super(balance);
         this.apr = apr;
     }
     public double getAPR(){
