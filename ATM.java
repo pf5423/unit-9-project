@@ -28,7 +28,7 @@ public class ATM {
         System.out.println(savingsAccount.toString());
         System.out.println(checkingAccount.toString());
         
-        while (true) {
+        /*while (true) {
             
             
 
