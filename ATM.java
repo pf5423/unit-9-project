@@ -22,6 +22,11 @@ public class ATM {
         Credit creditCard = new Credit(balance, apr);
         Savings savingsAccount = new Savings(sbalance, interest, name);
         Checking checkingAccount = new Checking(fee, cbalance, name);
+
+        System.out.println("");
+        creditCard.toString();
+        savingsAccount.toString();
+        checkingAccount.toString();
         while (true) {
             
             

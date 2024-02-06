@@ -26,6 +26,7 @@ public void deposit(double i) {
 public void withdraw(double i) {
     super.setBalance(super.getBalance() - i);
 }
+
 public String toString() {
     return "Hi " + name + ", " + super.toString();
 }

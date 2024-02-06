@@ -31,7 +31,7 @@ public class Savings extends Bank{
         }
         
     }
-
+    @Override
     public String toString(){
         return super.toString();
     }

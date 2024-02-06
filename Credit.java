@@ -31,8 +31,10 @@ public class Credit extends Account{
     public double monthsToPayOff(double months){
         return ((Math.pow((1 + (this.apr/12)), months) * (this.apr/12))/(Math.pow(1 + (this.apr/12), months) - 1)) * super.getBalance();
     }
+
+    @Override
     public String toString(){
-        return "APR: " + apr;
+        return "APR: " + apr + ". Balance: " + super.getBalance();
     }
 
 }
