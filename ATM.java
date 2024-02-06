@@ -24,10 +24,11 @@ public class ATM {
         Checking checkingAccount = new Checking(fee, cbalance, name);
 
         System.out.println("");
-        creditCard.toString();
-        savingsAccount.toString();
-        checkingAccount.toString();
-       /*  while (true) {
+        System.out.println(creditCard.toString());
+        System.out.println(savingsAccount.toString());
+        System.out.println(checkingAccount.toString());
+        
+        while (true) {
             
             
 
