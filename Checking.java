@@ -3,10 +3,11 @@ public class Checking extends Bank {
 
     public Checking() {
         super();
+        this.fee = 0;
     }
 
-    public Checking(double fee) {
-        super();
+    public Checking(double fee, double balance, String name) {
+        super(name, balance);
         this.fee = fee;
     }
 

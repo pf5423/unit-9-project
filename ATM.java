@@ -18,7 +18,10 @@ public class ATM {
         double fee = input.nextDouble();
         System.out.println("Interest rate:");
         double interest = input.nextDouble();
-
+        
+        Credit creditCard = new Credit(balance, apr);
+        Savings savingsAccount = new Savings(sbalance, interest, name);
+        Checking checkingAccount = new Checking(fee, cbalance, name);
         while (true) {
             
             
