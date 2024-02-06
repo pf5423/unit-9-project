@@ -92,6 +92,29 @@ public class ATM {
                 continue;
             }
             else if (in == 3) {
+                System.out.println("");
+                System.out.println("Savings Account Menu");
+                System.out.println("1. Check Balance");
+                System.out.println("2. Withdraw");
+                System.out.println("3. Deposit");
+                System.out.println("4. Display Months until Goal");
+                System.out.println("5. Back to Main Menu");
+                int inp = input.nextInt();
+                if (inp == 1) {
+
+                }
+                else if (inp == 2) {
+
+                }
+                else if (inp == 3) {
+
+                }
+                else if (inp == 4) {
+                    
+                }
+                else {
+                    break;
+                }
                 continue;
             }
             else {
