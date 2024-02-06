@@ -78,9 +78,63 @@ public class ATM {
                 }
             }
             else if (in == 2) {
+<<<<<<< Updated upstream
                 continue;
             }
             else if (in == 3) {
+=======
+                while (true) {
+                    System.out.println("");
+                System.out.println("Checking Account Menu");
+                System.out.println("1. Check Balance");
+                System.out.println("2. Withdraw");
+                System.out.println("3. Deposit");
+                System.out.println("4. Back to Main Menu");
+                int inp = input.nextInt();
+                if (inp == 1) {
+
+                }
+                else if (inp == 2) {
+
+                }
+                else if (inp == 3) {
+
+                }
+                else {
+                    break;
+                }
+                }
+                
+                continue;
+            }
+            else if (in == 3) {
+                while (true) {
+                    System.out.println("");
+                System.out.println("Savings Account Menu");
+                System.out.println("1. Check Balance");
+                System.out.println("2. Withdraw");
+                System.out.println("3. Deposit");
+                System.out.println("4. Display Months until Goal");
+                System.out.println("5. Back to Main Menu");
+                int inp = input.nextInt();
+                if (inp == 1) {
+
+                }
+                else if (inp == 2) {
+
+                }
+                else if (inp == 3) {
+
+                }
+                else if (inp == 4) {
+
+                }
+                else {
+                    break;
+                }
+                }
+                
+>>>>>>> Stashed changes
                 continue;
             }
             else {
