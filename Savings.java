@@ -22,12 +22,15 @@ public class Savings extends Bank{
     }
 
     @Override
-    public String withdraw(double withdraw){
+    public void withdraw(double withdraw){
         if ((super.getBalance() - withdraw) < 0){
-            return "The amount cannot be withdrawn as your balance is less than the withdrawal";
+            System.out.println("The amount cannot be withdrawn as your balance is less than the withdrawal");
         }
-        super.withdraw(withdraw);
-        return "The amount has been successfully withdrawn";
+        else {
+            super.withdraw(withdraw);
+        System.out.println("The amount has been successfully withdrawn");
+        }
+        
     }
 
     public String toString(){
