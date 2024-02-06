@@ -28,11 +28,58 @@ public class ATM {
         System.out.println(savingsAccount.toString());
         System.out.println(checkingAccount.toString());
         
-        /*while (true) {
+        while (true) {
             
-            
+            System.out.println("Welcome to the Bank!");
+            System.out.println("1. Credit Card");
+            System.out.println("2. Checking");
+            System.out.println("3. Savings");
+            System.out.println("4. Exit");
 
+            int in = input.nextInt();
 
-        } */
+            if (in == 1) {
+                while (true) {
+                    System.out.println("");
+                    System.out.println("Credit Card Menu");
+                    System.out.println("1. Check Balance");
+                    System.out.println("2. Make Purchase");
+                    System.out.println("3. Display Monthly Statement");
+                    System.out.println("4. Create Monthly Payments");
+                    System.out.println("5. Back to Main Menu");
+
+                    int inp = input.nextInt();
+
+                    if (inp == 1) {
+
+                    }
+                    else if (inp == 2) {
+
+                    }
+                    else if (inp == 3) {
+
+                    }
+                    else if (inp == 4) {
+
+                    }
+                    else {
+                        break;
+                    }
+                    continue;
+
+                }
+            }
+            else if (in == 2) {
+                continue;
+            }
+            else if (in == 3) {
+                continue;
+            }
+            else {
+                break;
+            }
+        } 
+System.out.println("Thank you for coming! See you again!");
+
     }
 }
