@@ -54,21 +54,23 @@ public class ATM {
                         System.out.println("Account Number: " + creditCard.getAccountNumber());
                         System.out.println("Account number: " + creditCard.getBalance());
                         System.out.println("APR: " + creditCard.getAPR());
-                        inp = input.nextInt();
+                       
                     }
                     else if (inp == 2) {
                         System.out.println("How much was your purchase?");
                         int purchase = input.nextInt();
                         creditCard.makePurchase(purchase);
-                        inp = input.nextInt();
+                        
                     }
                     else if (inp == 3) {
                         creditCard.monthlyStatement();
+                        
                     }
                     else if (inp == 4) {
                         System.out.println("Please enter the number of months you would like this paid off by: ");
                         double months = input.nextInt();
-                        creditCard.monthsToPayOff(months);
+                        System.out.println("Your monthly payment will be: " + creditCard.monthsToPayOff(months));
+                        
                     }
                     else {
                         break;
@@ -78,9 +80,6 @@ public class ATM {
                 }
             }
             else if (in == 2) {
-                continue;
-            }
-            else if (in == 3) {
                 while (true) {
                     System.out.println("");
                 System.out.println("Checking Account Menu");
@@ -90,13 +89,23 @@ public class ATM {
                 System.out.println("4. Back to Main Menu");
                 int inp = input.nextInt();
                 if (inp == 1) {
-
+                    System.out.println("Name: " + checkingAccount.getName());
+                    System.out.println("Account ID: " + checkingAccount.getAccountNumber());
+                    System.out.println("Balance: " + checkingAccount.getBalance());
+                    System.out.println("Fee: " + checkingAccount.getFee());
+                    
+                    
+                    
                 }
                 else if (inp == 2) {
-
+                    System.out.println("How much would you like to withdraw?");
+                    double withdraw = input.nextDouble();
+                    checkingAccount.withdraw(withdraw);
                 }
                 else if (inp == 3) {
-
+                    System.out.println("How much would you like to deposit?");
+                    double deposit = input.nextDouble();
+                    checkingAccount.deposit(deposit);
                 }
                 else {
                     break;
@@ -116,16 +125,25 @@ public class ATM {
                 System.out.println("5. Back to Main Menu");
                 int inp = input.nextInt();
                 if (inp == 1) {
-
+                    System.out.println("Name: " + savingsAccount.getName());
+                    System.out.println("Account ID: " + savingsAccount.getAccountNumber());
+                    System.out.println("Balance: " + savingsAccount.getBalance());
+                    System.out.println("Interest Rate: " + savingsAccount.getInterestRate());
                 }
                 else if (inp == 2) {
-
+                    System.out.println("How much would you like to withdraw? ");
+                    double withdrawal = input.nextDouble();
+                    savingsAccount.withdraw(withdrawal);
                 }
                 else if (inp == 3) {
-
+                    System.out.println("How much would you like to deposit? ");
+                    double depositing = input.nextDouble();
+                    savingsAccount.deposit(depositing);
                 }
                 else if (inp == 4) {
-
+                    System.out.println("What would you like your savings account goal to be? ");
+                    double goal = input.nextDouble();
+                    System.out.println("It will take you " + savingsAccount.amountInAccount(goal) + " months to get $" + goal);
                 }
                 else {
                     break;
